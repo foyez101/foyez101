@@ -1,64 +1,89 @@
 # Hi there, I'm Abdullah Al Mamun (Foyez) 👋
 
-### Aspiring AI/ML Engineer | Full-Stack Developer | CSE Graduate
+### Full-Stack & AI Engineer | React · Next.js · Node.js · NestJS · TypeScript | RAG · LLMs · NLP
 
-I build practical, end-to-end software — from full-stack web platforms to small automation and AI/ML experiments — and I'm actively growing my skills toward AI/ML engineering while staying strong in full-stack development.
+I build web applications that real businesses use, and I add AI where it actually helps, from a live order management system for a garment buying house to a RAG app that answers questions about company annual reports.
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm a Computer Science & Engineering graduate who enjoys turning ideas into working products. My recent focus has been building a complete full-stack application from scratch — auth, roles, deployment, and all — while also exploring AI/ML fundamentals and Python automation on the side.
+I'm a Computer Science & Engineering graduate (BUBT) who works across the full stack and applied AI:
 
-I like understanding systems end-to-end: database design, backend APIs, frontend UX, and deployment, not just one layer of the stack.
+- **Full-stack:** I've built and delivered a live, multi-role web app for a real client, and I'm building an e-commerce platform for a clothing brand.
+- **AI / NLP:** I've built a RAG system with hybrid retrieval and fine-tuned speech and summarization models for Bengali.
 
----
+I like owning a feature end to end: database design, backend APIs, frontend UX and deployment.
 
-## 🚀 Featured Project
-
-### 🎓 Scholario — Assignment & Submission Management System
-A full-stack platform for managing assignments and submissions across Admin, Teacher, and Student roles.
-
-- **Stack:** Express.js + Prisma + PostgreSQL (Neon) backend · Next.js 15 (App Router) frontend
-- **Auth:** JWT + bcrypt, email verification (6-digit code), password reset via email, role-based access control
-- **Email:** Gmail API via OAuth2 (bypasses free-tier SMTP restrictions)
-- **Deployed live:** Backend on Render, Frontend on Vercel, DB on Neon Postgres
-- Clean UI with a custom design system (rounded cards, soft shadows, teal accent)
-
-🔗 [github.com/foyez101/Scholario](https://github.com/foyez101/Scholario)
+📍 Dhaka, Bangladesh · Open to **Junior Software Engineer**, **Full-Stack** and **AI Engineer** roles
 
 ---
 
-## 🧪 Python Mini-Projects
+## 🚀 Featured Projects
 
-Small, self-contained projects for practicing core Python and automation concepts:
+### 🏭 Order Management System – Wing Fat Enterprise Ltd
+*Client project · Live: [uhobd.com](https://uhobd.com)*
 
-- 🏧 **ATM Machine Simulator** — command-line banking simulation
-- 🔊 **Text-to-Speech Tool** — built with `pyttsx3`
-- 🔑 **Password Generator** — customizable secure password generation
-- 📊 **Table Generator** — quick multiplication table generator
+A web-based order management system for a garment buying house, covering the full order lifecycle from pre-order, CAD and sampling to QC inspection, purchase order and shipment.
+
+- **Stack:** React (Vite) · Tailwind CSS · Node.js · Express.js · MySQL · JWT · bcrypt · Web Push · PWA
+- Role-based access for **5 roles** (Managing Director, Merchandiser Manager, Merchandiser, QC, Office), with department-level data isolation enforced in the API
+- Role-specific dashboards (monthly revenue, overdue orders, department comparison) with custom SVG charts, plus in-app and device push notifications
+- Rate limiting, email OTP codes and a forced password change on first login
+- Deployed on a VPS with a custom domain behind Cloudflare
+
+### 📊 Financial Report Analyzer – RAG Question Answering
+*AI project · [github.com/foyez101/financial-report-analyzer](https://github.com/foyez101/financial-report-analyzer)*
+
+Ask a question about a company's annual report and get an answer with page citations, or "Not found in the report" instead of a guess.
+
+- **Stack:** Python · PyMuPDF · Sentence-Transformers (bge-small) · ChromaDB · BM25 · Google Gemini API · Streamlit
+- Covers 4 Bangladeshi annual reports (Square Pharmaceuticals, Grameenphone, BRAC Bank), about 2,500 indexed chunks
+- Rebuilds financial-table rows from word positions and automatically splits two-page spreads
+- **Hybrid retrieval** (BM25 + vectors, fused with RRF) raised MRR from **0.51 to 0.66** over vector search alone
+- Answered **15/15** test questions correctly and refused **4/4** unanswerable ones
+
+### 🎙️ Bengali Audio Transcription and Summarization with a Newly Developed Dataset
+*Undergraduate thesis · [GitHub](https://github.com/foyez101/Automatic-Bengali-Meeting-Minutes-Generation-using-Fine-Tuned-Speech-Recognition-and-Summarization)*
+
+Upload Bengali audio and get a transcript plus a concise summary.
+
+- **Stack:** Python · PyTorch · Hugging Face Transformers · Whisper-small · BanglaT5 · FastAPI · FFmpeg · Kaggle
+- Built a new dataset of **1,160** Bengali audio clips with verbatim transcripts and reference summaries
+- Fine-tuned Whisper-small: word error rate **55.0% → 17.3%**, character error rate **22.6% → 6.0%**
+- Fine-tuned BanglaT5 for abstractive summarization: ROUGE-L **14.5 → 25.3** over the earlier mT5-small model
+
+### 👕 NEON MAN – Clothing E-commerce Platform
+*Client project · in development (private repo)*
+
+- **Stack:** Next.js · React (Vite) · NestJS · TypeScript · PostgreSQL · Prisma ORM · Resend
+- Next.js storefront and React admin panel for products, stock and orders
+- Cash-on-delivery checkout that reserves stock at order time and releases it on cancellation
+- Email OTP verification at sign-up and password reset by emailed code
+
+<details>
+<summary><b>Earlier projects</b></summary>
+
+- 🎓 **[Scholario](https://github.com/foyez101/Scholario)**: full-stack assignment and submission platform (Next.js, Express, Prisma, PostgreSQL) with Admin, Teacher and Student roles
+- 🐍 **Python mini-projects**: ATM simulator, text-to-speech tool, password generator, table generator
+
+</details>
 
 ---
 
 ## 🛠 Technical Skills
 
-**Languages:** JavaScript, Python, C++, SQL
+**Languages:** JavaScript, TypeScript, Python, C, C++, SQL, HTML/CSS
 
-**Backend:** Node.js, Express.js, Prisma, REST APIs, JWT Auth
+**Frontend:** React, Next.js, Vite, Tailwind CSS
 
-**Frontend:** Next.js (App Router), React, Axios
+**Backend:** Node.js, Express.js, NestJS, FastAPI, REST APIs, JWT authentication, role-based access control
 
-**Databases:** PostgreSQL (Neon), Prisma ORM
+**AI / ML:** RAG, hybrid search (BM25 + embeddings), LLM APIs (Google Gemini), NLP, speech recognition (Whisper), text summarization (BanglaT5, mT5), model fine-tuning, PyTorch, Hugging Face Transformers, Sentence-Transformers
 
-**DevOps / Deployment:** Render, Vercel, Git & GitHub
+**Databases:** MySQL, PostgreSQL, Prisma ORM, ChromaDB (vector database)
 
-**Currently Exploring:** AI/ML fundamentals, automation scripting, applied Python
-
----
-
-## 📚 Academic Foundation
-
-CSE graduate with coursework including Object-Oriented Programming in C++ — operator overloading, inheritance, virtual functions, templates, and exception handling — applied through hands-on assignments and projects.
+**Tools & Deployment:** Git, GitHub, Linux VPS, Cloudflare, Kaggle, Google Colab, Streamlit, Figma
 
 ---
 
@@ -74,10 +99,12 @@ CSE graduate with coursework including Object-Oriented Programming in C++ — op
 
 📧 **Email:** [abdullahfoyez110@gmail.com](mailto:abdullahfoyez110@gmail.com)
 
-💼 **LinkedIn:** [linkedin.com/in/abdullah-al-mamun-7340ab1a5](https://www.linkedin.com/in/abdullah-al-mamun-7340ab1a5/)
+💼 **LinkedIn:** [linkedin.com/in/abdullahalmamun-dev](https://www.linkedin.com/in/abdullahalmamun-dev)
+
+🌐 **Portfolio:** [foyez101.github.io/portfolio](https://foyez101.github.io/portfolio)
 
 💻 **GitHub:** [github.com/foyez101](https://github.com/foyez101)
 
 ---
 
-> Building practical software, one project at a time — and growing into AI/ML along the way.
+> Building software that real people use, and adding AI where it actually helps.
