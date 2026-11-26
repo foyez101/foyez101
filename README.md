@@ -107,4 +107,4 @@ Upload Bengali audio and get a transcript plus a concise summary.
 
 ---
 
-> Building software that real people use, and adding AI where it actually helps.
+> Building software that real people use, and adding AI where it actually help.
